@@ -12,10 +12,9 @@ public class Tetris extends JFrame {
     public Tetris() {
 
         statusbar = new JLabel(" 0");
-        titleBar = new JLabel("Left/Right = Move, Up = Rotate, "
-                + "Down = Faster, Space = Drop, P = Pause ");
+        titleBar = new JLabel("Left/Right=Move, Up=Rotate, "
+                + "Down=Faster, Space=Drop, P=Pause");
         add(titleBar, BorderLayout.NORTH);
-        
         add(statusbar, BorderLayout.SOUTH);
         Board board = new Board(this);
         add(board);
